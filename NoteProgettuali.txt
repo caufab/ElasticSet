@@ -1,0 +1,15 @@
+Per semplicità e per garantire una più semplice comprensione, le note progettuali che includono le motivazioni relative alle scelte 
+effettuate sull'implementazione sono state incluse nella propria classe (ElasticSetImp.java) come commento ai vari metodi/istruzioni.
+
+Sono presenti dunque:
+
+	- il file ElasticSetInt.java contenente l'interfaccia e la specifica con le clausole REQUIRES,MODIFIES,EFFECTS.. 
+		e le varie eccezioni lanciate e il tipo di quest'ultime.
+	- il file ElasticSetImp.java contenente l'implementazione del tipo di dato ElasticSet, sotto commento la funzione 
+		di astrazione e l'invariante di rappresentazione e alcune note progettuali come già spiegato all'inizio di questo file.
+	- il file EmptyCollectionException.java che implementa in breve un'eccezione di tipo unchecked non presente in java 
+		che semplicemente richiama la superclasse RuntimeException.
+	- due file TestTs1.java e TestTs2.java contenenti un codice main che creano una collezione ElasticSet rispettivamente di 
+		Integer e String, e che richiamano su di esso tutti i metodi implementati precedentemente e testano il loro corretto 
+		funzionamento anche in alcuni casi particolari (set vuoti, metodi con argomenti inattesi)
+
